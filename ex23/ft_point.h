@@ -10,8 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-typedef struct t_point
-{
+typedef struct t_point {
 	int	x;
-	int	y;
-}	t_point:
+	 int	y;
+} t_point;
+
+void set_point(*point)
+{
+}
