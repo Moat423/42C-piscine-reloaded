@@ -6,15 +6,8 @@
 /*   By: lmeubrin <lmeubrin@student.42berlin.       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 13:27:49 by lmeubrin          #+#    #+#             */
-/*   Updated: 2024/02/22 15:45:27 by lmeubrin         ###   ########.fr       */
+/*   Updated: 2024/04/19 13:43:33 by lmeubrin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define ABS(value) abs(value)
-
-int	abs(int value)
-{
-	if (value < 0)
-  		return (-value);
-	return value;
-}
+#define ABS(value) (value * ((value >= 0) - (value < 0)))
