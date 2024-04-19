@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmeubrin <lmeubrin@student.42berlin.       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 13:26:19 by lmeubrin          #+#    #+#             */
-/*   Updated: 2024/04/18 10:43:33 by lmeubrin         ###   ########.fr       */
+/*   Created: 2024/04/19 10:42:18 by lmeubrin          #+#    #+#             */
+/*   Updated: 2024/04/19 10:54:51 by lmeubrin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
+int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
 
-	if (nb == 0)
-		return (1);
-	else if (nb > 0)
-	{
-		i = nb;
-		while (--i > 0)
-			nb *= i;
-	}
-	else
-		return (0);
-	return (nb);
+	i = 0;
+	while (s1[i] == s2[i] && (!(s1[i] == '\0' || s2[i] == '\0')))
+		i++;
+	return (s1[i] - s2[i]);
 }

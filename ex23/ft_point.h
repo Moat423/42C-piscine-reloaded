@@ -1,28 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmeubrin <lmeubrin@student.42berlin.       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 13:26:19 by lmeubrin          #+#    #+#             */
-/*   Updated: 2024/04/18 10:43:33 by lmeubrin         ###   ########.fr       */
+/*   Created: 2024/02/22 17:03:20 by lmeubrin          #+#    #+#             */
+/*   Updated: 2024/04/19 12:30:19 by lmeubrin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
+typedef struct t_point
 {
-	int	i;
-
-	if (nb == 0)
-		return (1);
-	else if (nb > 0)
-	{
-		i = nb;
-		while (--i > 0)
-			nb *= i;
-	}
-	else
-		return (0);
-	return (nb);
-}
+	int	x;
+	int	y;
+}	t_point:
