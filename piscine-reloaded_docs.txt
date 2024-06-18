@@ -1,0 +1,21 @@
+
+editing permissions and creation dates of files, symlinks:
+
+time change:
+touch -t 2301312024
+--> 2023 Jan. 31 20:24
+
+chmod
+read: 4
+write: 2
+execute: 1
+chmod 755 --> rwxrxrx
+
+create symbolic link
+ln -h filename
+
+truncate -s size filename
+
+
+adding files with echo:
+echo content >> filename
